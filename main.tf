@@ -25,13 +25,15 @@ resource "google_compute_instance" "default" {
   machine_type = "n1-standard-1"
   zone         = "us-central1-a"
 
-  #tags = ["foo", "bar"]
-  tags = {
+  
+  tags = ["foo", "bar"]
+  labels = {
     [
     "name": "app1"
     "ttl" : "6000"
     "owner" : "devops@test.com"]
   }
+  
   boot_disk {
     initialize_params {
       image = "debian-cloud/debian-9"
