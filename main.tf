@@ -30,7 +30,7 @@ resource "google_compute_instance" "default" {
   labels = {
     "name"= "app1-businessunit-sales",
     "ttl" = "6000",
-    #"owner" = "devops@test.com"
+    "owner" = "devops@test.com"
   }
   
     tags = ["foo", "bar", "v1"]
