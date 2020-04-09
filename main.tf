@@ -39,7 +39,7 @@ resource "google_compute_instance" "default" {
   }
 
   network_interface {
-    subnetwork = module.network.subnets.0.subnetname
+    subnetwork = module.network.subnets[0].subnetname
 
     access_config {
       // Ephemeral IP
