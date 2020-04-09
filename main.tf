@@ -29,9 +29,10 @@ resource "google_compute_instance" "default" {
   tags = ["foo", "bar"]
   labels = {
     [
-    "name": "app1"
-    "ttl" : "6000"
-    "owner" : "devops@test.com"]
+    "name": "app1",
+    "ttl" : "6000",
+    "owner" : "devops@test.com"
+      ]
   }
   
   boot_disk {
