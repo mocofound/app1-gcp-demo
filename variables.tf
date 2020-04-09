@@ -5,3 +5,7 @@ variable "project_id" {
 variable "network_name" {
   description = "Name of GCP Virtual Network"
 }
+
+variable "gcp_json_credentials" {
+  description = "Name of GCP Virtual Network"
+}
