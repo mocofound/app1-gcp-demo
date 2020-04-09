@@ -7,8 +7,8 @@ provider "google" {
 module "network" {
   source  = "app.terraform.io/aharness-org/network/google"
   version = "2.2.0"
-}
   
+  #Required Variables
   network_name = var.network_name
   project_id = var.project_id
   subnets = [
@@ -18,3 +18,6 @@ module "network" {
             subnet_region         = "us-central1"
         },
 }
+
+  
+
