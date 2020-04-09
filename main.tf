@@ -16,5 +16,5 @@ module "network" {
             subnet_name           = "subnet-01"
             subnet_ip             = "10.10.10.0/24"
             subnet_region         = "us-central1"
-        }
+        },
 }
